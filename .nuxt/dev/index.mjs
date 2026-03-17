@@ -2033,7 +2033,7 @@ const _tO7T1CuQ088qvCtfP0WLLru7IFWU2fU7tg5OvKHHpo = (function(nitro) {
 
 const rootDir = "/Users/waqr/Desktop/trial-sim";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Watch adaptive and conventional clinical trials race side-by-side. See why adaptive designs save patients and time."}],"link":[],"style":[],"script":[],"noscript":[],"title":"SimTrial — Interactive Clinical Trial Simulation"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"An interactive exploration of the OCTAVE framework for clinical trial simulation."}],"link":[],"style":[],"script":[],"noscript":[],"title":"SimTrial — Interactive Clinical Trial Simulation"};
 
 const appRootTag = "div";
 
