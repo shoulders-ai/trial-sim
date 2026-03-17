@@ -32,10 +32,13 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // Set baseURL for GitHub Pages subpath deployment (e.g., /trial-sim/)
+    // Override with NUXT_APP_BASE_URL env var in CI
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'SimTrial — Interactive Clinical Trial Simulation',
       meta: [
-        { name: 'description', content: 'Watch adaptive and conventional clinical trials race side-by-side. See why adaptive designs save patients and time.' },
+        { name: 'description', content: 'An interactive exploration of the OCTAVE framework for clinical trial simulation.' },
       ],
     },
   },
