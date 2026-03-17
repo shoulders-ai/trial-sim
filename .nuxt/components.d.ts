@@ -1,0 +1,130 @@
+
+import type { DefineComponent, SlotsType } from 'vue'
+type IslandComponent<T> = DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>> & T
+
+type HydrationStrategies = {
+  hydrateOnVisible?: IntersectionObserverInit | true
+  hydrateOnIdle?: number | true
+  hydrateOnInteraction?: keyof HTMLElementEventMap | Array<keyof HTMLElementEventMap> | true
+  hydrateOnMediaQuery?: string
+  hydrateAfter?: number
+  hydrateWhen?: boolean
+  hydrateNever?: true
+}
+type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
+
+
+export const ControlsParameterSlider: typeof import("../app/components/controls/ParameterSlider.vue")['default']
+export const ControlsReplicationControls: typeof import("../app/components/controls/ReplicationControls.vue")['default']
+export const ControlsScenarioSelector: typeof import("../app/components/controls/ScenarioSelector.vue")['default']
+export const InteractiveDecisionRulesDemo: typeof import("../app/components/interactive/DecisionRulesDemo.vue")['default']
+export const InteractiveErrorRateDemo: typeof import("../app/components/interactive/ErrorRateDemo.vue")['default']
+export const InteractiveRandomizationDemo: typeof import("../app/components/interactive/RandomizationDemo.vue")['default']
+export const InteractiveSampleSizeDemo: typeof import("../app/components/interactive/SampleSizeDemo.vue")['default']
+export const LayoutSectionLabel: typeof import("../app/components/layout/SectionLabel.vue")['default']
+export const LayoutSiteFooter: typeof import("../app/components/layout/SiteFooter.vue")['default']
+export const LayoutSiteHeader: typeof import("../app/components/layout/SiteHeader.vue")['default']
+export const ResultsMonteCarloProgress: typeof import("../app/components/results/MonteCarloProgress.vue")['default']
+export const ResultsOperatingCharsTable: typeof import("../app/components/results/OperatingCharsTable.vue")['default']
+export const ResultsPowerCurve: typeof import("../app/components/results/PowerCurve.vue")['default']
+export const ResultsSampleSizeHistogram: typeof import("../app/components/results/SampleSizeHistogram.vue")['default']
+export const ResultsScoreboard: typeof import("../app/components/results/Scoreboard.vue")['default']
+export const ResultsSparklineGrid: typeof import("../app/components/results/SparklineGrid.vue")['default']
+export const SectionsConclusionSection: typeof import("../app/components/sections/ConclusionSection.vue")['default']
+export const SectionsOctaveAnalysis: typeof import("../app/components/sections/OctaveAnalysis.vue")['default']
+export const SectionsOctaveCharacteristics: typeof import("../app/components/sections/OctaveCharacteristics.vue")['default']
+export const SectionsOctaveEvidence: typeof import("../app/components/sections/OctaveEvidence.vue")['default']
+export const SectionsOctaveObjective: typeof import("../app/components/sections/OctaveObjective.vue")['default']
+export const SectionsOctaveSection: typeof import("../app/components/sections/OctaveSection.vue")['default']
+export const SectionsOctaveTrial: typeof import("../app/components/sections/OctaveTrial.vue")['default']
+export const SectionsOctaveValuation: typeof import("../app/components/sections/OctaveValuation.vue")['default']
+export const SectionsSeeItTogetherSection: typeof import("../app/components/sections/SeeItTogetherSection.vue")['default']
+export const SectionsStatisticalFoundationSection: typeof import("../app/components/sections/StatisticalFoundationSection.vue")['default']
+export const SectionsWhySimulateSection: typeof import("../app/components/sections/WhySimulateSection.vue")['default']
+export const SharedMetricCard: typeof import("../app/components/shared/MetricCard.vue")['default']
+export const SharedPaperQuote: typeof import("../app/components/shared/PaperQuote.vue")['default']
+export const SharedProse: typeof import("../app/components/shared/Prose.vue")['default']
+export const SimulationDualTrialCanvas: typeof import("../app/components/simulation/DualTrialCanvas.vue")['default']
+export const SimulationPatientTooltip: typeof import("../app/components/simulation/PatientTooltip.vue")['default']
+export const SimulationTrialTimeline: typeof import("../app/components/simulation/TrialTimeline.vue")['default']
+export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
+export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
+export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
+export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
+export const DevOnly: typeof import("../node_modules/nuxt/dist/app/components/dev-only")['default']
+export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
+export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
+export const NuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
+export const NuxtTime: typeof import("../node_modules/nuxt/dist/app/components/nuxt-time.vue")['default']
+export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
+export const NuxtImg: typeof import("../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']
+export const NuxtPicture: typeof import("../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']
+export const NuxtPage: typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
+export const NoScript: typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
+export const Link: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
+export const Base: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']
+export const Title: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']
+export const Meta: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']
+export const Style: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Style']
+export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
+export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
+export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyControlsParameterSlider: LazyComponent<typeof import("../app/components/controls/ParameterSlider.vue")['default']>
+export const LazyControlsReplicationControls: LazyComponent<typeof import("../app/components/controls/ReplicationControls.vue")['default']>
+export const LazyControlsScenarioSelector: LazyComponent<typeof import("../app/components/controls/ScenarioSelector.vue")['default']>
+export const LazyInteractiveDecisionRulesDemo: LazyComponent<typeof import("../app/components/interactive/DecisionRulesDemo.vue")['default']>
+export const LazyInteractiveErrorRateDemo: LazyComponent<typeof import("../app/components/interactive/ErrorRateDemo.vue")['default']>
+export const LazyInteractiveRandomizationDemo: LazyComponent<typeof import("../app/components/interactive/RandomizationDemo.vue")['default']>
+export const LazyInteractiveSampleSizeDemo: LazyComponent<typeof import("../app/components/interactive/SampleSizeDemo.vue")['default']>
+export const LazyLayoutSectionLabel: LazyComponent<typeof import("../app/components/layout/SectionLabel.vue")['default']>
+export const LazyLayoutSiteFooter: LazyComponent<typeof import("../app/components/layout/SiteFooter.vue")['default']>
+export const LazyLayoutSiteHeader: LazyComponent<typeof import("../app/components/layout/SiteHeader.vue")['default']>
+export const LazyResultsMonteCarloProgress: LazyComponent<typeof import("../app/components/results/MonteCarloProgress.vue")['default']>
+export const LazyResultsOperatingCharsTable: LazyComponent<typeof import("../app/components/results/OperatingCharsTable.vue")['default']>
+export const LazyResultsPowerCurve: LazyComponent<typeof import("../app/components/results/PowerCurve.vue")['default']>
+export const LazyResultsSampleSizeHistogram: LazyComponent<typeof import("../app/components/results/SampleSizeHistogram.vue")['default']>
+export const LazyResultsScoreboard: LazyComponent<typeof import("../app/components/results/Scoreboard.vue")['default']>
+export const LazyResultsSparklineGrid: LazyComponent<typeof import("../app/components/results/SparklineGrid.vue")['default']>
+export const LazySectionsConclusionSection: LazyComponent<typeof import("../app/components/sections/ConclusionSection.vue")['default']>
+export const LazySectionsOctaveAnalysis: LazyComponent<typeof import("../app/components/sections/OctaveAnalysis.vue")['default']>
+export const LazySectionsOctaveCharacteristics: LazyComponent<typeof import("../app/components/sections/OctaveCharacteristics.vue")['default']>
+export const LazySectionsOctaveEvidence: LazyComponent<typeof import("../app/components/sections/OctaveEvidence.vue")['default']>
+export const LazySectionsOctaveObjective: LazyComponent<typeof import("../app/components/sections/OctaveObjective.vue")['default']>
+export const LazySectionsOctaveSection: LazyComponent<typeof import("../app/components/sections/OctaveSection.vue")['default']>
+export const LazySectionsOctaveTrial: LazyComponent<typeof import("../app/components/sections/OctaveTrial.vue")['default']>
+export const LazySectionsOctaveValuation: LazyComponent<typeof import("../app/components/sections/OctaveValuation.vue")['default']>
+export const LazySectionsSeeItTogetherSection: LazyComponent<typeof import("../app/components/sections/SeeItTogetherSection.vue")['default']>
+export const LazySectionsStatisticalFoundationSection: LazyComponent<typeof import("../app/components/sections/StatisticalFoundationSection.vue")['default']>
+export const LazySectionsWhySimulateSection: LazyComponent<typeof import("../app/components/sections/WhySimulateSection.vue")['default']>
+export const LazySharedMetricCard: LazyComponent<typeof import("../app/components/shared/MetricCard.vue")['default']>
+export const LazySharedPaperQuote: LazyComponent<typeof import("../app/components/shared/PaperQuote.vue")['default']>
+export const LazySharedProse: LazyComponent<typeof import("../app/components/shared/Prose.vue")['default']>
+export const LazySimulationDualTrialCanvas: LazyComponent<typeof import("../app/components/simulation/DualTrialCanvas.vue")['default']>
+export const LazySimulationPatientTooltip: LazyComponent<typeof import("../app/components/simulation/PatientTooltip.vue")['default']>
+export const LazySimulationTrialTimeline: LazyComponent<typeof import("../app/components/simulation/TrialTimeline.vue")['default']>
+export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
+export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
+export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
+export const LazyClientOnly: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']>
+export const LazyDevOnly: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/dev-only")['default']>
+export const LazyServerPlaceholder: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyNuxtLink: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']>
+export const LazyNuxtLoadingIndicator: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']>
+export const LazyNuxtTime: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-time.vue")['default']>
+export const LazyNuxtRouteAnnouncer: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']>
+export const LazyNuxtImg: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']>
+export const LazyNuxtPicture: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']>
+export const LazyNuxtPage: LazyComponent<typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']>
+export const LazyNoScript: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
+export const LazyLink: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']>
+export const LazyBase: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']>
+export const LazyTitle: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']>
+export const LazyMeta: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']>
+export const LazyStyle: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Style']>
+export const LazyHead: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']>
+export const LazyHtml: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']>
+export const LazyBody: LazyComponent<typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']>
+export const LazyNuxtIsland: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']>
+
+export const componentNames: string[]

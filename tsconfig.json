@@ -1,0 +1,14 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"],
+      "#shared/*": ["./shared/*"],
+      "@lib": ["./lib"],
+      "@lib/*": ["./lib/*"],
+      "@shared": ["./shared"],
+      "@shared/*": ["./shared/*"]
+    }
+  }
+}
